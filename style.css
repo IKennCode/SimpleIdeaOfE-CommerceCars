@@ -1,0 +1,128 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+    background-color: beige;
+    height: 100vh;
+}
+.productCard{
+    background-color: white;
+    display: grid;
+    grid-template-rows: 55% 45%;
+    width: 45%;
+    height: 95%;
+    box-shadow: 10px 10px 50px 0px rgb(35, 35, 35);
+}
+.productImg{
+    background-image: url(img/black.jpg);
+    padding: 40px 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.productDescription{
+    background-color: rgb(179, 163, 142);
+    padding-left: 20px;
+}
+.category{
+    background-color:rgb(235, 240, 230);
+    color: rgb(249, 250, 249);
+    border-radius: 5px;
+    width: 8rem;
+    padding-left: 20px;
+    font-weight: 1000;
+}
+.productTitle{
+    font-weight: 900;
+}
+.productDetails{
+    display: flex;
+    flex-direction: column;
+}
+.colorPrice{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    align-content: space-between;
+    
+}
+.color{
+    display: flex;
+    justify-content: space-between;
+    width: 10rem;
+    cursor: pointer;
+}
+.black{
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+.red{
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.yellow{
+    background-color: yellow;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.blue{
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#btn{
+    background-color: white;
+    color: black;
+    padding: 5px 20px;
+    border-radius: 20px;
+    transition-duration: 0.4s;  
+    display: inline-block;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+#btn span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+#btn:hover span {
+    padding-right: 25px;
+}
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+#btn:hover{
+    background-color: aqua;
+}
+
+#btn {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
